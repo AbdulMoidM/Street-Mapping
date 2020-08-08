@@ -1,11 +1,5 @@
 
- * Name: Abdul Moid Munawar
- * NetID: amunawar
- * Email: amunawar@u.rochester.edu
- * Assignment: Project 3
- * Lab: MW 2-3:15pm
-
- * Lab Partner:
+ My Partner:
  * Name: Moazzam Salman
  * NetID: msalman
  * Email: msalman@u.rochester.edu
@@ -13,6 +7,11 @@
 To compile, we used the line: javac StreetMap.java
 To run, we used the line: java StreetMap --show *txt-file-name-goes-here*
 An example execution line: java StreetMap --show nys.txt
+
+NOTE: <b> Due to the University of Rochester Computer Science Department's project guidelines, I cannot display the solution publicly. Thus I have removed the code inside StreetMap.java, which contained the implementation of Dijkstra's algorithm and the main method for the project. 
+
+I have attached two images to display the working of the project. "initial-display.png" shows what you would see if you ran the project with the nys.txt file. Whereas, "shortest-path-example.png" shows the way you would see the shortest path if you input the names of two nodes into the graphical interface.</b>
+
 
 Files:
 Node.java, Edge.java, Graph.java, Canvas.java, StreetMap.java, map.png, map2.png. The two png files are just icons we add into our map at the starting node and ending node. The node file represents an intersection, the edge file reprsents a node and is also used to calculate weights of the edges. The graph file implements the shortest path calculation. The Canvas file is used to draw the map, handling the JFrame part of our project. The StreetMap class is the class with the main method, and uses inputs from cmd to give output of our project. 
@@ -28,7 +27,8 @@ We had trouble retracing the path once we had run the dijsktra algorithm. We tri
 We also had trouble of how to allow priority queue to compare nodes. We thought about adding just the node distances. But we realized to add a CompareTo method in Node class which will compare the distance from source. We then added who nodes into the min heap.
 We were having trouble figuring out how to use the longitudes and lattitudes. We used the code for the 'Harversine Formula' found at [https://github.com/jasonwinn/haversine/blob/master/Haversine.java] to calculate the weight of the edges based on their longitude and latitude. This was the only part of the pre-written code we used.
 
-Extra Credit:
+Graphical Feature:
+-Once the project is run, the entire txt file is read and a map is displayed using JFrames.
 - We added Extra graphics to the map to make it much more informational. We added location pointers(map.png and map2.png) on the map of different colors at the starting and ending locations, and we also printed the distance in miles in the south panel. We also printed the starting and ending nodes in the south panel, along with an indication of what color pointer represents which node(yellow is starting node and purple is ending Node).
 - We added the south panel which shows the starting and ending location, and it also has two input text boxes in which you could write new starting and ending locations and it will show the new path instantly on that same map. This features eliminates the need to rereun code in cmd for new nodes, as once code is run, new pair of nodes can be added in the text boxes of JFrame and Find button can be clicked to get results. 
 -On the North panel we added a button for day and nightmode and pressing this button changes the background color and graph color making it seem like night and day mode.
