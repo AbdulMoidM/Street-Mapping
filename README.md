@@ -8,7 +8,7 @@ To compile, we used the line: javac StreetMap.java
 To run, we used the line: java StreetMap --show *txt-file-name-goes-here*
 An example execution line: java StreetMap --show nys.txt
 
-NOTE: **Due** to the University of Rochester Computer Science Department's project guidelines, I cannot display the solution publicly. Thus I have removed the code inside** **StreetMap.java, which contained the implementation of Dijkstra's algorithm and the main method for the project.** 
+NOTE: **Due to the University of Rochester Computer Science Department's project guidelines, I cannot display the solution publicly. Thus I have removed the code inside** **StreetMap.java, which contained the implementation of Dijkstra's algorithm and the main method for the project.** 
 
 **I have attached two images to display the working of the project. "initial-display.png" shows what you would see if you ran the project with the nys.txt file. Whereas,** **"shortest-path-example.png" shows the way you would see the shortest path if you input the names of two nodes into the graphical interface.**
 
